@@ -1,0 +1,7 @@
+Tampering:
+Do you see the potentially malicious hyperlink being injected into the form? 
+Yes, the hyperlinked work "Gotcha" appears above the name input bar, and leads to google.com when clicked on.
+Repeat the same steps with **secure.ts**. Do you see any difference. Why?
+In secure.ts I found that the form ignores the script and does not execute it. The script shows up
+as the person's name once logged in, and does not inject a hyperlink onto the login webpage. This is 
+because the input it sanitized in secure.ts to prevent XSS attacks.
