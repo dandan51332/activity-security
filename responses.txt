@@ -5,3 +5,10 @@ Repeat the same steps with **secure.ts**. Do you see any difference. Why?
 In secure.ts I found that the form ignores the script and does not execute it. The script shows up
 as the person's name once logged in, and does not inject a hyperlink onto the login webpage. This is 
 because the input it sanitized in secure.ts to prevent XSS attacks.
+
+Repudiation:
+Do you think your actions can be repudiated?
+No, compared to the secure version which has logging which allows for non-repudiation with tracking of api calls and accountability on 
+whos calling what api. The insecure version makes it so that users can send messages impersonating other users by sending messages under other people's username
+and there is no way to see who is actually sending what message. Beyond no logging, there is also no authentication which means that messages cannot
+be traced to a singular source either.
